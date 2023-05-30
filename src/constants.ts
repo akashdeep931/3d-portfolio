@@ -16,3 +16,10 @@ export const navLinks: { id: string; title: string }[] = [
     title: "Contact",
   },
 ];
+
+export const roles: string[] = [
+  "Backend Developer",
+  "Frontend Developer",
+  "App Developer",
+  "A Software Developer!",
+];

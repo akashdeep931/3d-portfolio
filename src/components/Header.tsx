@@ -27,7 +27,9 @@ const Header = () => {
               alt="portfolio logo"
               className="w-12 h-12 object-contain rounded-full"
             />
-            <p className="text-[20px] font-bold flex">Akash | Portfolio</p>
+            <p className="hidden xs:flex text-[20px] font-bold flex">
+              Akash | Portfolio
+            </p>
           </Link>
           <ul className="list-none hidden md:flex flex-row gap-10">
             {navLinks.map((link: { id: string; title: string }): ReactNode => {

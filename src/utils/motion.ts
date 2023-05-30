@@ -1,4 +1,4 @@
-export const textVariant = (delay) => {
+export const textVariant = (delay: number = 0): Record<string, any> => {
   return {
     hidden: {
       y: -50,
@@ -16,7 +16,12 @@ export const textVariant = (delay) => {
   };
 };
 
-export const fadeIn = (direction, type, delay, duration) => {
+export const fadeIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number
+): Record<string, any> => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -85,4 +90,33 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
       },
     },
   };
+};
+
+export const container: Record<string, any> = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.04 },
+  },
+};
+
+export const child: Record<string, any> = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 12,
+      stiffness: 100,
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: 20,
+    transition: {
+      type: "spring",
+      damping: 12,
+      stiffness: 100,
+    },
+  },
 };
