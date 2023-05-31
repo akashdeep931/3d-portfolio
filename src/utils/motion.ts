@@ -42,7 +42,10 @@ export const fadeIn = (
   };
 };
 
-export const zoomIn = (delay, duration) => {
+export const zoomIn = (
+  delay: number,
+  duration: number
+): Record<string, any> => {
   return {
     hidden: {
       scale: 0,
@@ -61,7 +64,12 @@ export const zoomIn = (delay, duration) => {
   };
 };
 
-export const slideIn = (direction, type, delay, duration) => {
+export const slideIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number
+): Record<string, any> => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -80,7 +88,10 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
-export const staggerContainer = (staggerChildren, delayChildren) => {
+export const staggerContainer = (
+  staggerChildren: number = 0,
+  delayChildren: number = 0
+): Record<string, any> => {
   return {
     hidden: {},
     show: {
@@ -118,5 +129,13 @@ export const child: Record<string, any> = {
       damping: 12,
       stiffness: 100,
     },
+  },
+};
+
+export const bounce: Record<string, any> = {
+  y: {
+    duration: 1,
+    repeat: Infinity,
+    ease: "easeOut",
   },
 };
