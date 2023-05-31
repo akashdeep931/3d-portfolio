@@ -1,5 +1,6 @@
 import mainLogo from "./main-logo.svg";
 import menuIcon from "./icons8-menu.svg";
 import closeIcon from "./close.svg";
+import downArrow from "./down-arrow.svg";
 
-export { mainLogo, menuIcon, closeIcon };
+export { mainLogo, menuIcon, closeIcon, downArrow };
