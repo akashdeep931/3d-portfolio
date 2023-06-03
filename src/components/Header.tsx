@@ -1,12 +1,13 @@
 import { ReactNode, useState } from "react";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styles from "../styles.ts";
 import { mainLogo, menuIcon, closeIcon } from "../assets";
 import { navLinks } from "../constants.ts";
 
 const Header = () => {
-  const [pageLoc, setPageLoc] = useState("");
   const [isMenuOpened, setIsMenuOpened] = useState(false);
+  const location = useLocation();
 
   return (
     <header>
@@ -14,14 +15,7 @@ const Header = () => {
         className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
       >
         <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
-          <Link
-            to="/"
-            className="flex items-center gap-2"
-            onClick={(): void => {
-              setPageLoc("");
-              window.scrollTo(0, 0);
-            }}
-          >
+          <HashLink smooth to="#" className="flex items-center gap-2">
             <img
               src={mainLogo}
               alt="portfolio logo"
@@ -30,20 +24,21 @@ const Header = () => {
             <p className="hidden xs:flex text-[20px] font-bold flex">
               Akash | Portfolio
             </p>
-          </Link>
+          </HashLink>
           <ul className="list-none hidden md:flex flex-row gap-10">
             {navLinks.map((link: { id: string; title: string }): ReactNode => {
               return (
                 <li
                   key={link.id}
                   className={`${
-                    pageLoc === link.title ? "text-white" : "text-secondary"
+                    location.hash === `#${link.id}`
+                      ? "text-white"
+                      : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
-                  onClick={(): void => {
-                    setPageLoc(link.title);
-                  }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <HashLink smooth to={`/#${link.id}`}>
+                    {link.title}
+                  </HashLink>
                 </li>
               );
             })}
@@ -68,16 +63,17 @@ const Header = () => {
                       <li
                         key={link.id}
                         className={`${
-                          pageLoc === link.title
+                          location.hash === `#${link.id}`
                             ? "text-[#a2a8d3]"
                             : "text-white"
                         } font-poppins font-medium text-[16px] font-medium cursor-pointer`}
                         onClick={(): void => {
-                          setPageLoc(link.title);
                           setIsMenuOpened(!isMenuOpened);
                         }}
                       >
-                        <a href={`#${link.id}`}>{link.title}</a>
+                        <HashLink smooth to={`/#${link.id}`}>
+                          {link.title}
+                        </HashLink>
                       </li>
                     );
                   }

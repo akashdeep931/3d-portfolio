@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { child, bounce } from "../utils/motion";
 import styles from "../styles";
 import { downArrow } from "../assets";
+import { HashLink } from "react-router-hash-link";
 
 const Intro = () => {
   const [isSummText, setIsSummText] = useState(false);
@@ -41,7 +42,7 @@ const Intro = () => {
         initial="hidden"
         animate="visible"
       >
-        <a href="#about">
+        <HashLink to="/#about">
           <motion.img
             transition={bounce}
             animate={{
@@ -51,7 +52,7 @@ const Intro = () => {
             alt="to scroll down icon"
             className="w-[40px] h-[68px]"
           />
-        </a>
+        </HashLink>
       </motion.div>
     </section>
   );
