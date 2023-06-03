@@ -36,7 +36,7 @@ const Intro = () => {
         />
       </div>
       <motion.div
-        className="absolute bottom-5"
+        className="absolute bottom-10"
         variants={child}
         initial="hidden"
         animate="visible"
