@@ -21,7 +21,7 @@ const Header = () => {
               alt="portfolio logo"
               className="w-12 h-12 object-contain rounded-full"
             />
-            <p className="hidden xs:flex text-[20px] font-bold flex">
+            <p className="hidden midS:flex text-[20px] font-bold">
               Akash | Portfolio
             </p>
           </HashLink>

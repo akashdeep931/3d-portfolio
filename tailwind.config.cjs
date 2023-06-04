@@ -18,6 +18,7 @@ module.exports = {
       },
       screens: {
         xs: "400px",
+        midS: "900px",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/vector-DEC-2020-51_generated.jpg')",
