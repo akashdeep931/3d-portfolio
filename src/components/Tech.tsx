@@ -34,7 +34,7 @@ const Tech = () => {
           </motion.p>
         </motion.article>
         <motion.div
-          variants={fadeIn("left", "spring", 0.1, 1)}
+          variants={fadeIn("down", "spring", 0.1, 1)}
           className="flex justify-center items-center mt-[60px]"
         >
           <ul className="flex flex-row md:gap-5 gap-0 items-center justify-center p-2 rounded-3xl bg-tertiary">

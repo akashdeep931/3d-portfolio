@@ -8,7 +8,6 @@ import { profilePic } from "../assets";
 
 const About = () => {
   const [isGrabbing, setIsGrabbing] = useState(false);
-  const [isHeaderLoaded, setIsHeaderLoaded] = useState(false);
 
   const handleMouseDown = (): void => {
     setIsGrabbing(true);
@@ -17,10 +16,6 @@ const About = () => {
   const handleMouseUp = (): void => {
     setIsGrabbing(false);
   };
-
-  setTimeout(() => {
-    setIsHeaderLoaded(true);
-  }, 1500);
 
   return (
     <>
@@ -58,24 +53,15 @@ const About = () => {
             />
           </article>
         </div>
-        {isHeaderLoaded ? (
-          <motion.div
-            className={`${
-              isGrabbing ? "cursor-grabbing" : "cursor-grab"
-            } relative h-[200px] sm:h-[300px] lg:h-[600px]`}
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-          >
-            <ComputerCanvas />
-          </motion.div>
-        ) : (
-          <motion.p
-            variants={fadeIn("up", "spring", 0.1, 1)}
-            className={`${styles.sectionSubText} text-white text-center mt-[70px]`}
-          >
-            Loading...
-          </motion.p>
-        )}
+        <motion.div
+          className={`${
+            isGrabbing ? "cursor-grabbing" : "cursor-grab"
+          } relative h-[200px] sm:h-[300px] lg:h-[600px]`}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+        >
+          <ComputerCanvas />
+        </motion.div>
       </motion.section>
     </>
   );
