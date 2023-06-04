@@ -59,7 +59,8 @@ const About = () => {
           </article>
         </div>
         {isHeaderLoaded ? (
-          <div
+          <motion.div
+            variants={fadeIn("up", "spring", 0.1, 1)}
             className={`${
               isGrabbing ? "cursor-grabbing" : "cursor-grab"
             } relative h-[200px] sm:h-[300px] lg:h-[600px]`}
@@ -67,7 +68,7 @@ const About = () => {
             onMouseUp={handleMouseUp}
           >
             <ComputerCanvas />
-          </div>
+          </motion.div>
         ) : (
           <motion.p
             variants={fadeIn("up", "spring", 0.1, 1)}
