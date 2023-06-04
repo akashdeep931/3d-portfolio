@@ -60,7 +60,6 @@ const About = () => {
         </div>
         {isHeaderLoaded ? (
           <motion.div
-            variants={fadeIn("up", "spring", 0.1, 1)}
             className={`${
               isGrabbing ? "cursor-grabbing" : "cursor-grab"
             } relative h-[200px] sm:h-[300px] lg:h-[600px]`}
