@@ -23,16 +23,14 @@ const Experiences = () => {
         </motion.div>
         <motion.div className="mt-20 flex flex-col">
           <VerticalTimeline>
-            {experiences
-              .toReversed()
-              .map((experience: Experience): ReactNode => {
-                return (
-                  <ExperienceCard
-                    key={experience.company}
-                    experience={experience}
-                  />
-                );
-              })}
+            {experiences.map((experience: Experience): ReactNode => {
+              return (
+                <ExperienceCard
+                  key={experience.company}
+                  experience={experience}
+                />
+              );
+            })}
           </VerticalTimeline>
         </motion.div>
       </motion.section>
