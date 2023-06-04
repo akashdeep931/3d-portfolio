@@ -1,4 +1,4 @@
-import { Header, Intro, About, Experiences } from "./components";
+import { Header, Intro, About, Experiences, Tech } from "./components";
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       </section>
       <About />
       <Experiences />
+      <Tech />
     </main>
   );
 };

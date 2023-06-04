@@ -1,5 +1,29 @@
-import type { Experience } from "../types/main";
-import { ertransit, grupMdt, northcoders, pullandbear } from "./assets";
+import type { Experience, Technologies } from "../types/main";
+import {
+  JS,
+  TS,
+  bootstrap,
+  capacitor,
+  csharp,
+  css,
+  dotnet,
+  ertransit,
+  express,
+  firebase,
+  grupMdt,
+  html,
+  ionic,
+  next,
+  node,
+  northcoders,
+  pinia,
+  psql,
+  pullandbear,
+  react,
+  redux,
+  tailwind,
+  vue,
+} from "./assets";
 
 export const navLinks: { id: string; title: string }[] = [
   {
@@ -11,12 +35,12 @@ export const navLinks: { id: string; title: string }[] = [
     title: "Experience",
   },
   {
-    id: "projects",
-    title: "Projects",
-  },
-  {
     id: "tech",
     title: "Tech",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -90,3 +114,90 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+
+export const languages: Technologies[] = [
+  {
+    name: "JavaScript",
+    icon: JS,
+  },
+  {
+    name: "TypeScript",
+    icon: TS,
+  },
+  {
+    name: "C#",
+    icon: csharp,
+  },
+];
+
+export const frontend: Technologies[] = [
+  {
+    name: "HTML5",
+    icon: html,
+  },
+  {
+    name: "CSS3",
+    icon: css,
+  },
+  {
+    name: "ReactJS",
+    icon: react,
+  },
+  {
+    name: "Redux",
+    icon: redux,
+  },
+  {
+    name: "NextJS",
+    icon: next,
+  },
+  {
+    name: "VueJS",
+    icon: vue,
+  },
+  {
+    name: "Pinia",
+    icon: pinia,
+  },
+  {
+    name: "Ionic",
+    icon: ionic,
+  },
+  {
+    name: "Capacitor",
+    icon: capacitor,
+  },
+  {
+    name: "Tailwind",
+    icon: tailwind,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+];
+
+export const backend: Technologies[] = [
+  {
+    name: "NodeJS",
+    icon: node,
+  },
+  {
+    name: "ExpressJS",
+    icon: express,
+  },
+  {
+    name: ".NET",
+    icon: dotnet,
+  },
+  {
+    name: "PostgreSQL",
+    icon: psql,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+];
+
+export const techType: string[] = ["Languages", "Frontend", "Backend"];

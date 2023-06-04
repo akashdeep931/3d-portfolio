@@ -8,4 +8,9 @@ type Experience = {
   description: string[];
 };
 
-export type { Experience };
+type Technologies = {
+  name: string;
+  icon: string;
+};
+
+export type { Experience, Technologies };

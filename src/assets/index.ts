@@ -7,6 +7,25 @@ import northcoders from "./northcoders.jpg";
 import ertransit from "./ertransit.png";
 import pullandbear from "./pull&bear.jpg";
 import grupMdt from "./grupMDT.png";
+import JS from "./JavaScript.png";
+import TS from "./TypeScript.png";
+import csharp from "./csharp.png";
+import react from "./react.png";
+import redux from "./redux.png";
+import next from "./next.png";
+import html from "./html.png";
+import css from "./css.svg";
+import vue from "./vue.png";
+import pinia from "./pinia.png";
+import ionic from "./ionic.png";
+import capacitor from "./capacitor.png";
+import tailwind from "./tailwind.png";
+import bootstrap from "./bootstrap.png";
+import node from "./node.png";
+import express from "./express.png";
+import dotnet from "./dotnet.png";
+import psql from "./psql.png";
+import firebase from "./firebase.png";
 
 export {
   mainLogo,
@@ -18,4 +37,23 @@ export {
   ertransit,
   pullandbear,
   grupMdt,
+  JS,
+  TS,
+  csharp,
+  react,
+  redux,
+  next,
+  html,
+  css,
+  vue,
+  pinia,
+  ionic,
+  capacitor,
+  tailwind,
+  bootstrap,
+  node,
+  express,
+  dotnet,
+  psql,
+  firebase,
 };
