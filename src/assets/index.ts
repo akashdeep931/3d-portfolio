@@ -26,6 +26,9 @@ import express from "./express.png";
 import dotnet from "./dotnet.png";
 import psql from "./psql.png";
 import firebase from "./firebase.png";
+import ncGames from "./ncgames.png";
+import restAPI from "./restAPI.png";
+import motive from "./motive.png";
 
 export {
   mainLogo,
@@ -56,4 +59,7 @@ export {
   dotnet,
   psql,
   firebase,
+  ncGames,
+  restAPI,
+  motive,
 };

@@ -13,4 +13,12 @@ type Technologies = {
   icon: string;
 };
 
-export type { Experience, Technologies };
+type Project = {
+  name: string;
+  image: string;
+  link: string;
+  repo: string;
+  techStack: string[];
+};
+
+export type { Experience, Technologies, Project };

@@ -5,6 +5,8 @@ import About from "./About";
 import Experiences from "./Experiences";
 import ExperienceCard from "./ExperienceCard";
 import Tech from "./Tech";
+import Projects from "./Projects";
+import ProjectCard from "./ProjectCard";
 
 export {
   Header,
@@ -14,4 +16,6 @@ export {
   Experiences,
   ExperienceCard,
   Tech,
+  Projects,
+  ProjectCard,
 };

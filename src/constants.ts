@@ -1,4 +1,4 @@
-import type { Experience, Technologies } from "../types/main";
+import type { Experience, Project, Technologies } from "../types/main";
 import {
   JS,
   TS,
@@ -13,6 +13,8 @@ import {
   grupMdt,
   html,
   ionic,
+  motive,
+  ncGames,
   next,
   node,
   northcoders,
@@ -21,6 +23,7 @@ import {
   pullandbear,
   react,
   redux,
+  restAPI,
   tailwind,
   vue,
 } from "./assets";
@@ -201,3 +204,44 @@ export const backend: Technologies[] = [
 ];
 
 export const techType: string[] = ["Languages", "Frontend", "Backend"];
+
+export const projects: Project[] = [
+  {
+    name: "MOTIVE",
+    image: motive,
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7067189428439392256/",
+    repo: "https://github.com/zaneris123/motive-northcoders",
+    techStack: [
+      "VueJS",
+      "Ionic",
+      "Capacitor",
+      "Firebase Cloud Firestore",
+      "Firebase Authentication",
+      "Firebase Cloud Storage",
+      "Google Maps API",
+    ],
+  },
+  {
+    name: "NC-GAMES",
+    image: ncGames,
+    link: "https://nc-games-community.netlify.app/",
+    repo: "https://github.com/akashdeep931/NC-GAMES",
+    techStack: ["JavaScript", "HTML5", "CSS3", "React", "Axios"],
+  },
+  {
+    name: "NC-GAMES-RestAPI",
+    image: restAPI,
+    link: "https://nc-games-api-39ip.onrender.com/api",
+    repo: "https://github.com/akashdeep931/NC-GAMES-API",
+    techStack: [
+      "JavaScript",
+      "NodeJS",
+      "ExpressJS",
+      "Cors",
+      "dotenv",
+      "pg",
+      "Jest",
+      "Supertest",
+    ],
+  },
+];
