@@ -30,7 +30,7 @@ const Tech = () => {
           <motion.p
             className={`${styles.sectionSubText} mt-4 max-w-3xl leading-[30px]`}
           >
-            Technologies I have worked with.
+            Technologies I work with.
           </motion.p>
         </motion.article>
         <motion.div
