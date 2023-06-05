@@ -41,6 +41,7 @@ const Tech = () => {
             {techType.map((type: string): ReactNode => {
               return (
                 <li
+                  key={type}
                   className={`${
                     typeClicked === type ? "bg-[#27374D]" : "hover:bg-[#526D82]"
                   } xl:text-[24px] md:text-[20px] sm:text-[16px] text-[13px] cursor-pointer p-5 rounded-2xl`}

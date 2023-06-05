@@ -46,7 +46,7 @@ const ProjectCard = ({ proj, index }: { proj: Project; index: number }) => {
             Tech Stack:&nbsp;
             {proj.techStack.map(
               (tech: string, index: number, currA: string[]): ReactNode => (
-                <span>
+                <span key={tech}>
                   {index === currA.length - 1 ? tech + "." : tech + ", "}
                 </span>
               )
