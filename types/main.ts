@@ -11,6 +11,7 @@ type Experience = {
 type Technologies = {
   name: string;
   icon: string;
+  category: string;
 };
 
 type Project = {

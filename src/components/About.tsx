@@ -3,11 +3,12 @@ import { textVariant, fadeIn } from "../utils/motion";
 import styles from "../styles";
 import { ComputerCanvas } from "./3D_models";
 import { SectionWrapper } from "../hoc";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { profilePic } from "../assets";
 
 const About = () => {
   const [isGrabbing, setIsGrabbing] = useState(false);
+  const [showWebGLComponents, setShowWebGLComponents] = useState(false);
 
   const handleMouseDown = (): void => {
     setIsGrabbing(true);
@@ -16,6 +17,29 @@ const About = () => {
   const handleMouseUp = (): void => {
     setIsGrabbing(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionElement: HTMLElement | null =
+        document.getElementById("webgl-section");
+
+      if (sectionElement) {
+        const sectionPosition: DOMRect = sectionElement.getBoundingClientRect();
+        const isInViewport: boolean =
+          sectionPosition.top < window.innerHeight - 200 &&
+          sectionPosition.bottom >= -300;
+
+        setShowWebGLComponents(isInViewport);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -54,13 +78,14 @@ const About = () => {
           </article>
         </div>
         <motion.div
+          id="webgl-section"
           className={`${
             isGrabbing ? "cursor-grabbing" : "cursor-grab"
           } relative h-[200px] sm:h-[300px] lg:h-[600px]`}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
         >
-          <ComputerCanvas />
+          {showWebGLComponents && <ComputerCanvas />}
         </motion.div>
       </motion.section>
     </>

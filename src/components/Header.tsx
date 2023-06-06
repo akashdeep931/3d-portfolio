@@ -1,13 +1,25 @@
 import { ReactNode, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import {
+  Link as ScrollLink,
+  animateScroll as scrollAnimation,
+} from "react-scroll";
+import { Link } from "react-router-dom";
 import styles from "../styles.ts";
 import { mainLogo, menuIcon, closeIcon } from "../assets";
 import { navLinks } from "../constants.ts";
 
 const Header = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
-  const location = useLocation();
+  const [currentSection, setCurrentSection] = useState("");
+
+  const scroll = (): void => {
+    scrollAnimation.scrollToTop({
+      isDynamic: true,
+      smooth: true,
+      duration: 400,
+      delay: 0,
+    });
+  };
 
   return (
     <header>
@@ -15,7 +27,14 @@ const Header = () => {
         className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
       >
         <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
-          <HashLink smooth to="#" className="flex items-center gap-2">
+          <Link
+            to="/"
+            onClick={(): void => {
+              setCurrentSection("");
+              scroll();
+            }}
+            className="flex items-center gap-2"
+          >
             <img
               src={mainLogo}
               alt="portfolio logo"
@@ -24,21 +43,28 @@ const Header = () => {
             <p className="hidden midS:flex text-[20px] font-bold">
               Akash | Portfolio
             </p>
-          </HashLink>
+          </Link>
           <ul className="list-none hidden md:flex flex-row gap-10">
             {navLinks.map((link: { id: string; title: string }): ReactNode => {
               return (
                 <li
                   key={link.id}
                   className={`${
-                    location.hash === `#${link.id}`
+                    currentSection === link.title
                       ? "text-white"
                       : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
                 >
-                  <HashLink smooth to={`/#${link.id}`}>
+                  <ScrollLink
+                    isDynamic={true}
+                    smooth={true}
+                    duration={400}
+                    delay={0}
+                    to={link.id}
+                    onClick={(): void => setCurrentSection(link.title)}
+                  >
                     {link.title}
-                  </HashLink>
+                  </ScrollLink>
                 </li>
               );
             })}
@@ -63,17 +89,24 @@ const Header = () => {
                       <li
                         key={link.id}
                         className={`${
-                          location.hash === `#${link.id}`
+                          currentSection === link.title
                             ? "text-[#a2a8d3]"
                             : "text-white"
                         } font-poppins font-medium text-[16px] font-medium cursor-pointer`}
-                        onClick={(): void => {
-                          setIsMenuOpened(!isMenuOpened);
-                        }}
                       >
-                        <HashLink smooth to={`/#${link.id}`}>
+                        <ScrollLink
+                          isDynamic={true}
+                          smooth={true}
+                          duration={400}
+                          delay={0}
+                          to={link.id}
+                          onClick={(): void => {
+                            setIsMenuOpened(!isMenuOpened);
+                            setCurrentSection(link.title);
+                          }}
+                        >
                           {link.title}
-                        </HashLink>
+                        </ScrollLink>
                       </li>
                     );
                   }

@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import { child, bounce } from "../utils/motion";
 import styles from "../styles";
 import { downArrow } from "../assets";
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 
 const Intro = () => {
   const [isSummText, setIsSummText] = useState(false);
@@ -14,6 +15,15 @@ const Intro = () => {
   setTimeout(() => {
     setIsSummText(true);
   }, 500);
+
+  const scroll = (position: number): void => {
+    animateScroll.scrollTo(position, {
+      isDynamic: true,
+      smooth: true,
+      duration: 400,
+      delay: 0,
+    });
+  };
 
   return (
     <section
@@ -42,7 +52,7 @@ const Intro = () => {
         initial="hidden"
         animate="visible"
       >
-        <HashLink to="/#about">
+        <Link to="/" onClick={() => scroll(900)}>
           <motion.img
             transition={bounce}
             animate={{
@@ -52,7 +62,7 @@ const Intro = () => {
             alt="to scroll down icon"
             className="w-[40px] h-[68px]"
           />
-        </HashLink>
+        </Link>
       </motion.div>
     </section>
   );

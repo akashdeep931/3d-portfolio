@@ -118,92 +118,105 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const languages: Technologies[] = [
+export const tech: Technologies[] = [
   {
     name: "JavaScript",
     icon: JS,
+    category: "Languages",
   },
   {
     name: "TypeScript",
     icon: TS,
+    category: "Languages",
   },
   {
     name: "C#",
     icon: csharp,
+    category: "Languages",
   },
-];
-
-export const frontend: Technologies[] = [
   {
     name: "HTML5",
     icon: html,
+    category: "Frontend",
   },
   {
     name: "CSS3",
     icon: css,
+    category: "Frontend",
   },
   {
     name: "ReactJS",
     icon: react,
+    category: "Frontend",
   },
   {
     name: "Redux",
     icon: redux,
+    category: "Frontend",
   },
   {
     name: "NextJS",
     icon: next,
+    category: "Frontend",
   },
   {
     name: "VueJS",
     icon: vue,
+    category: "Frontend",
   },
   {
     name: "Pinia",
     icon: pinia,
+    category: "Frontend",
   },
   {
     name: "Ionic",
     icon: ionic,
+    category: "Frontend",
   },
   {
     name: "Capacitor",
     icon: capacitor,
+    category: "Frontend",
   },
   {
     name: "Tailwind",
     icon: tailwind,
+    category: "Frontend",
   },
   {
     name: "Bootstrap",
     icon: bootstrap,
+    category: "Frontend",
   },
-];
-
-export const backend: Technologies[] = [
   {
     name: "NodeJS",
     icon: node,
+    category: "Backend",
   },
   {
     name: "ExpressJS",
     icon: express,
+    category: "Backend",
   },
   {
     name: ".NET",
     icon: dotnet,
+    category: "Backend",
   },
   {
     name: "PostgreSQL",
     icon: psql,
+    category: "Backend",
   },
   {
     name: "Firebase",
     icon: firebase,
+    category: "Backend",
   },
 ];
 
-export const techType: string[] = ["Languages", "Frontend", "Backend"];
+export const techCategories: string[] = ["Languages", "Frontend", "Backend"];
 
 export const projects: Project[] = [
   {

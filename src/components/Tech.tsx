@@ -1,6 +1,6 @@
 import { SectionWrapper } from "../hoc";
 import { BallCanva } from "./3D_models";
-import { languages, frontend, backend, techType } from "../constants";
+import { tech, techCategories } from "../constants";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/motion";
 import styles from "../styles";
@@ -38,7 +38,7 @@ const Tech = () => {
           className="flex justify-center items-center mt-[60px]"
         >
           <ul className="flex flex-row md:gap-5 gap-0 items-center justify-center p-2 rounded-3xl bg-tertiary">
-            {techType.map((type: string): ReactNode => {
+            {techCategories.map((type: string): ReactNode => {
               return (
                 <li
                   key={type}
@@ -54,53 +54,26 @@ const Tech = () => {
           </ul>
         </motion.div>
         <motion.div className="flex flex-row flex-wrap justify-center gap-10">
-          {typeClicked === "Languages"
-            ? languages.map((tech: Technologies): ReactNode => {
-                return (
-                  <div
-                    className={`${
-                      isGrabbing ? "cursor-grabbing" : "cursor-grab"
-                    } mt-[60px] w-28 h-28`}
-                    key={tech.name}
-                    onMouseDown={handleMouseDown}
-                    onMouseUp={handleMouseUp}
-                  >
-                    <BallCanva icon={tech.icon} />
-                    <p className="text-center">{tech.name}</p>
-                  </div>
-                );
-              })
-            : typeClicked === "Frontend"
-            ? frontend.map((tech: Technologies): ReactNode => {
-                return (
-                  <div
-                    className={`${
-                      isGrabbing ? "cursor-grabbing" : "cursor-grab"
-                    } mt-[60px] w-28 h-28`}
-                    key={tech.name}
-                    onMouseDown={handleMouseDown}
-                    onMouseUp={handleMouseUp}
-                  >
-                    <BallCanva icon={tech.icon} />
-                    <p className="text-center">{tech.name}</p>
-                  </div>
-                );
-              })
-            : backend.map((tech: Technologies): ReactNode => {
-                return (
-                  <div
-                    className={`${
-                      isGrabbing ? "cursor-grabbing" : "cursor-grab"
-                    } mt-[60px] w-28 h-28`}
-                    key={tech.name}
-                    onMouseDown={handleMouseDown}
-                    onMouseUp={handleMouseUp}
-                  >
-                    <BallCanva icon={tech.icon} />
-                    <p className="text-center">{tech.name}</p>
-                  </div>
-                );
-              })}
+          {tech
+            .filter(
+              ({ category }: { category: string }) => category === typeClicked
+            )
+            .map((tech: Technologies): ReactNode => {
+              return (
+                <div
+                  id="ball-webGL"
+                  className={`${
+                    isGrabbing ? "cursor-grabbing" : "cursor-grab"
+                  } mt-[60px] w-28 h-28`}
+                  key={tech.name}
+                  onMouseDown={handleMouseDown}
+                  onMouseUp={handleMouseUp}
+                >
+                  <BallCanva icon={tech.icon} />
+                  <p className="text-center">{tech.name}</p>
+                </div>
+              );
+            })}
         </motion.div>
       </motion.section>
     </>
