@@ -5,11 +5,11 @@ const BallModel = ({ imgPath }: { imgPath: string }) => {
 
   return (
     <mesh castShadow receiveShadow scale={2.75}>
-      <directionalLight position={[0, 0, 0]} />
-      <ambientLight intensity={1} />
+      <directionalLight position={[2, 2, 1]} />
+      <ambientLight intensity={0.3} />
       <icosahedronGeometry args={[1, 1]} />
       <meshStandardMaterial
-        color="#E7F6F2"
+        color="#DCD7C9"
         polygonOffset
         polygonOffsetFactor={-5}
         flatShading

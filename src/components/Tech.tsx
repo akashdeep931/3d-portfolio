@@ -4,12 +4,13 @@ import { tech, techCategories } from "../constants";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/motion";
 import styles from "../styles";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { Technologies } from "../../types/main";
 
 const Tech = () => {
   const [typeClicked, setTypeClicked] = useState("Languages");
   const [isGrabbing, setIsGrabbing] = useState(false);
+  const [showWebGLComponents, setShowWebGLComponents] = useState(false);
 
   const handleMouseDown = (): void => {
     setIsGrabbing(true);
@@ -18,6 +19,29 @@ const Tech = () => {
   const handleMouseUp = (): void => {
     setIsGrabbing(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionElement: HTMLElement | null =
+        document.getElementById("ball-webGL");
+
+      if (sectionElement) {
+        const sectionPosition: DOMRect = sectionElement.getBoundingClientRect();
+        const isInViewport: boolean =
+          sectionPosition.top < window.innerHeight &&
+          sectionPosition.bottom >= -300;
+
+        setShowWebGLComponents(isInViewport);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -53,7 +77,10 @@ const Tech = () => {
             })}
           </ul>
         </motion.div>
-        <motion.div className="flex flex-row flex-wrap justify-center gap-10">
+        <motion.div
+          id="ball-webGL"
+          className="flex flex-row flex-wrap justify-center gap-10"
+        >
           {tech
             .filter(
               ({ category }: { category: string }) => category === typeClicked
@@ -61,7 +88,6 @@ const Tech = () => {
             .map((tech: Technologies): ReactNode => {
               return (
                 <div
-                  id="ball-webGL"
                   className={`${
                     isGrabbing ? "cursor-grabbing" : "cursor-grab"
                   } mt-[60px] w-28 h-28`}
@@ -69,7 +95,7 @@ const Tech = () => {
                   onMouseDown={handleMouseDown}
                   onMouseUp={handleMouseUp}
                 >
-                  <BallCanva icon={tech.icon} />
+                  {showWebGLComponents && <BallCanva icon={tech.icon} />}
                   <p className="text-center">{tech.name}</p>
                 </div>
               );
