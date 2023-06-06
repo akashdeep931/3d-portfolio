@@ -7,7 +7,7 @@ import { child, bounce } from "../utils/motion";
 import styles from "../styles";
 import { downArrow } from "../assets";
 import { Link } from "react-router-dom";
-import { animateScroll } from "react-scroll";
+import { scroller } from "react-scroll";
 
 const Intro = () => {
   const [isSummText, setIsSummText] = useState(false);
@@ -16,8 +16,8 @@ const Intro = () => {
     setIsSummText(true);
   }, 500);
 
-  const scroll = (position: number): void => {
-    animateScroll.scrollTo(position, {
+  const scroll = (section: string): void => {
+    scroller.scrollTo(section, {
       isDynamic: true,
       smooth: true,
       duration: 400,
@@ -52,7 +52,7 @@ const Intro = () => {
         initial="hidden"
         animate="visible"
       >
-        <Link to="/" onClick={() => scroll(900)}>
+        <Link to="/" onClick={() => scroll("about")}>
           <motion.img
             transition={bounce}
             animate={{
