@@ -26,7 +26,7 @@ const About = () => {
       if (sectionElement) {
         const sectionPosition: DOMRect = sectionElement.getBoundingClientRect();
         const isInViewport: boolean =
-          sectionPosition.top < window.innerHeight - 200 &&
+          sectionPosition.top < window.innerHeight &&
           sectionPosition.bottom >= -300;
 
         setShowWebGLComponents(isInViewport);
