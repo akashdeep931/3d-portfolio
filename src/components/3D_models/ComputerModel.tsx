@@ -28,10 +28,10 @@ const ComputerModel = ({
       />
       <primitive
         object={computer.scene}
-        scale={isSmallMobile ? 0.9 : isBigMobile ? 1 : 1}
+        scale={isSmallMobile ? 0.9 : 1}
         position={
           isSmallMobile
-            ? [0, -2, -1]
+            ? [0, -2.5, -1.3]
             : isBigMobile
             ? [0, -2, -1.7]
             : [0, -1.5, -1.7]

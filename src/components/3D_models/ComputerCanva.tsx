@@ -28,7 +28,7 @@ const ComputerCanvas = () => {
       smallMediaQuery.removeEventListener("change", handleScreenSizeChange);
       bigMediaQuery.removeEventListener("change", handleScreenSizeChange);
     };
-  }, [isSmallMobile]);
+  }, []);
 
   return (
     <Canvas
