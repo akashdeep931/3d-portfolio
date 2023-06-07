@@ -6,6 +6,7 @@ import {
   Tech,
   Projects,
   Contact,
+  SocialIcons,
 } from "./components";
 import { StarsCanva } from "./components/3D_models";
 
@@ -24,6 +25,9 @@ const App = () => {
         <Contact />
         <StarsCanva />
       </section>
+      <div>
+        <SocialIcons />
+      </div>
     </main>
   );
 };

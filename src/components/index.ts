@@ -8,6 +8,7 @@ import Tech from "./Tech";
 import Projects from "./Projects";
 import ProjectCard from "./ProjectCard";
 import Contact from "./Contact";
+import SocialIcons from "./SocialIcons";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   Projects,
   ProjectCard,
   Contact,
+  SocialIcons,
 };
