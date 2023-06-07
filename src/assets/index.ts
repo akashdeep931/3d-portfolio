@@ -32,6 +32,7 @@ import motive from "./motive.png";
 import qr from "./QR.svg";
 import check from "./check.gif";
 import cross from "./cross.gif";
+import laptop from "./laptop.gif";
 
 export {
   mainLogo,
@@ -68,4 +69,5 @@ export {
   qr,
   check,
   cross,
+  laptop,
 };
