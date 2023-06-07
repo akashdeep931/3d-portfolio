@@ -19,7 +19,7 @@ const Projects = () => {
           <motion.p
             className={`${styles.sectionSubText} mt-4 max-w-3xl leading-[30px]`}
           >
-            My Work.
+            My Work (more projects coming soon).
           </motion.p>
         </motion.article>
 
