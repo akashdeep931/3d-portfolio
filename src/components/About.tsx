@@ -70,7 +70,7 @@ const About = () => {
               every day, and keep growing in the tech field.
             </motion.p>
             <motion.img
-              variants={fadeIn("left", "spring", 0.1, 1)}
+              variants={fadeIn("down", "spring", 0.1, 1)}
               src={profilePic}
               alt="profile picture"
               className="lg:w-1/6 w-2/6 p-0 m-0 rounded-full"

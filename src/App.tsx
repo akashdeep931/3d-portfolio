@@ -5,7 +5,9 @@ import {
   Experiences,
   Tech,
   Projects,
+  Contact,
 } from "./components";
+import { StarsCanva } from "./components/3D_models";
 
 const App = () => {
   return (
@@ -18,6 +20,10 @@ const App = () => {
       <Experiences />
       <Tech />
       <Projects />
+      <section className="relative z-0">
+        <Contact />
+        <StarsCanva />
+      </section>
     </main>
   );
 };

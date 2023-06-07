@@ -29,6 +29,9 @@ import firebase from "./firebase.png";
 import ncGames from "./ncgames.png";
 import restAPI from "./restAPI.png";
 import motive from "./motive.png";
+import qr from "./QR.svg";
+import check from "./check.gif";
+import cross from "./cross.gif";
 
 export {
   mainLogo,
@@ -62,4 +65,7 @@ export {
   ncGames,
   restAPI,
   motive,
+  qr,
+  check,
+  cross,
 };

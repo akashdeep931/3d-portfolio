@@ -7,6 +7,7 @@ import ExperienceCard from "./ExperienceCard";
 import Tech from "./Tech";
 import Projects from "./Projects";
 import ProjectCard from "./ProjectCard";
+import Contact from "./Contact";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   Tech,
   Projects,
   ProjectCard,
+  Contact,
 };

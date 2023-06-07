@@ -2,7 +2,6 @@ import type { Experience, Project, Technologies } from "../types/main";
 import {
   JS,
   TS,
-  bootstrap,
   capacitor,
   csharp,
   css,
@@ -18,11 +17,9 @@ import {
   next,
   node,
   northcoders,
-  pinia,
   psql,
   pullandbear,
   react,
-  redux,
   restAPI,
   tailwind,
   vue,
@@ -150,11 +147,6 @@ export const tech: Technologies[] = [
     category: "Frontend",
   },
   {
-    name: "Redux",
-    icon: redux,
-    category: "Frontend",
-  },
-  {
     name: "NextJS",
     icon: next,
     category: "Frontend",
@@ -162,11 +154,6 @@ export const tech: Technologies[] = [
   {
     name: "VueJS",
     icon: vue,
-    category: "Frontend",
-  },
-  {
-    name: "Pinia",
-    icon: pinia,
     category: "Frontend",
   },
   {
@@ -182,11 +169,6 @@ export const tech: Technologies[] = [
   {
     name: "Tailwind",
     icon: tailwind,
-    category: "Frontend",
-  },
-  {
-    name: "Bootstrap",
-    icon: bootstrap,
     category: "Frontend",
   },
   {
