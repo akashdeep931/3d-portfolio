@@ -12,8 +12,8 @@ const Advice = ({
   };
 
   return (
-    <aside className="fixed h-full w-full flex flex-wrap justify-center items-center bg-[#000000] bg-opacity-70 z-10 p-10">
-      <div className="text-center h-[530px] xs:h-[600px] md:h-[800px] mt-[90px] py-10 px-10 md:px-20 bg-[#041C32] flex flex-col justify-start items-center gap-8 sm:gap-10 rounded-3xl">
+    <aside className="fixed h-full w-full flex flex-wrap justify-center items-center bg-[#000000] bg-opacity-70 z-10 p-10 overflow-scroll">
+      <div className="text-center mt-[80px] py-8 px-10 md:px-20 bg-[#041C32] flex flex-col justify-start items-center gap-8 sm:gap-10 rounded-3xl">
         <h1 className="text-[30px] md:text-[60px] text-white font-black">
           On Mobile?
         </h1>

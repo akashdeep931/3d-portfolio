@@ -33,7 +33,7 @@ const App = () => {
 
   return (
     <main className="relative z-0 bg-primary">
-      {smallViewPort && localStorage.getItem("gotIt") === "true" && (
+      {smallViewPort && localStorage.getItem("gotIt") === null && (
         <Advice setSmallViewPort={setSmallViewPort} />
       )}
       <section className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
