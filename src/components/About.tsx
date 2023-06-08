@@ -63,7 +63,7 @@ const About = () => {
               the frontend I mainly work with JavaScript and TypeScript with
               their associated libraries: React.js, Vue.js, Next.js, Vite.js,
               Three.js, Ionic, Capacitor, Tailwind. In the backend I am
-              proficient using Node.js, Express.js, Jest, PostgreSQL and
+              proficient in using Node.js, Express.js, Jest, PostgreSQL and
               Firebase. To expand my skill set, I am actively learning C#, .NET,
               Python, and AWS, as I believe in continuously enhancing my
               abilities and staying up-to-date with industry
