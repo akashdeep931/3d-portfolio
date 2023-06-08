@@ -76,7 +76,7 @@ const About = () => {
               variants={fadeIn("down", "spring", 0.1, 1)}
               src={profilePic}
               alt="profile picture"
-              className="lg:w-1/6 w-2/6 p-0 m-0 rounded-full"
+              className="lg:w-1/5 w-2/6 p-0 m-0 rounded-full"
             />
           </article>
         </div>
