@@ -59,14 +59,17 @@ const About = () => {
               variants={fadeIn("right", "spring", 0.1, 1)}
               className={`${styles.sectionSubText} mt-4 max-w-3xl leading-[30px] text-justify`}
             >
-              I am a Junior Software Developer currently based in Birmingham
-              with insights in JavaScript, TypeScript, React.js, Vue.js,
-              Vite,js, Three.js, Ionic, Capacitor, Node.js, Express.js, Jest,
-              PostgreSQL, Firebase, CSS, HTML5. Nevertheless, I am not limited
-              to this tech stack and also learning C#, .NET, ASP.NET and
-              Python.&nbsp;&#128187;&nbsp;&#128187;
+              I am a Junior Software Developer currently based in Birmingham. In
+              the frontend I mainly work with JavaScript and TypeScript with
+              their associated libraries: React.js, Vue.js, Next.js, Vite.js,
+              Three.js, Ionic, Capacitor, Tailwind. In the backend I am
+              proficient using Node.js, Express.js, Jest, PostgreSQL and
+              Firebase. To expand my skill set, I am actively learning C#, .NET,
+              Python, and AWS, as I believe in continuously enhancing my
+              abilities and staying up-to-date with industry
+              trends.&nbsp;&#128187;&nbsp;&#128187;
               <br /> <br />
-              Challenges lover, never give up, motivated to learn new things
+              Challenges lover, I never give up, motivated to learn new things
               every day, and keep growing in the tech field.
             </motion.p>
             <motion.img
