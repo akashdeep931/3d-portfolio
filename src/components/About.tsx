@@ -59,24 +59,26 @@ const About = () => {
               variants={fadeIn("right", "spring", 0.1, 1)}
               className={`${styles.sectionSubText} mt-4 max-w-3xl leading-[30px] text-justify`}
             >
-              I am a Junior Software Developer currently based in Birmingham. In
-              the frontend I mainly work with JavaScript and TypeScript with
-              their associated libraries: React.js, Vue.js, Next.js, Vite.js,
-              Three.js, Ionic, Capacitor, Tailwind. In the backend I am
-              proficient in using Node.js, Express.js, Jest, PostgreSQL and
-              Firebase. To expand my skill set, I am actively learning C#, .NET,
-              Python, and AWS, as I believe in continuously enhancing my
-              abilities and staying up-to-date with industry
+              I am a Software Developer currently based in Birmingham. In the
+              frontend I mainly work with JavaScript | TypeScript with their
+              associated libraries: React.js, Vue.js, Next.js, Vite.js,
+              Three.js, Ionic, Capacitor; HTML, and CSS (most of the time using
+              Tailwind). In the backend I am proficient in using JavaScript with
+              Node.js, Express.js and Jest, PostgreSQL as database management
+              system, and Firebase. To expand my skill set, I am actively
+              learning C#, .NET, Python, and AWS, as I believe in continuously
+              enhancing my abilities and staying up-to-date with industry
               trends.&nbsp;&#128187;&nbsp;&#128187;
               <br /> <br />
               Challenges lover, I never give up, motivated to learn new things
-              every day, and keep growing in the tech field.
+              every day, willing to relocate, and keep growing in the tech
+              field.
             </motion.p>
             <motion.img
               variants={fadeIn("down", "spring", 0.1, 1)}
               src={profilePic}
               alt="profile picture"
-              className="lg:w-1/5 w-2/6 p-0 m-0 rounded-full"
+              className="lg:w-3/12 lg:mt-0 md:w-60 md:h-full md:mt-[180px] w-2/6 p-0 m-0 rounded-full"
             />
           </article>
         </div>
