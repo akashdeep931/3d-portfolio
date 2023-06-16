@@ -64,7 +64,7 @@ const About = () => {
               associated libraries: React.js, Vue.js, Next.js, Vite.js,
               Three.js, Ionic, Capacitor; HTML, and CSS (most of the time using
               Tailwind). In the backend I am proficient in using JavaScript with
-              Node.js, Express.js and Jest, PostgreSQL as database management
+              Node.js, Express.js and Jest, PostgreSQL as data management
               system, and Firebase. To expand my skill set, I am actively
               learning C#, .NET, Python, and AWS, as I believe in continuously
               enhancing my abilities and staying up-to-date with industry
