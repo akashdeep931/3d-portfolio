@@ -62,7 +62,7 @@ const About = () => {
               I am a Software Developer currently based in Birmingham. In the
               frontend I mainly work with JavaScript | TypeScript with their
               associated libraries: React.js, Vue.js, Next.js, Vite.js,
-              Three.js, Ionic, Capacitor; HTML, and CSS (most of the time using
+              Three.js, Ionic and Capacitor; HTML, and CSS (most of the time using
               Tailwind). In the backend I am proficient in using JavaScript with
               Node.js, Express.js and Jest, PostgreSQL as data management
               system, and Firebase. To expand my skill set, I am actively
