@@ -60,18 +60,19 @@ const About = () => {
               className={`${styles.sectionSubText} mt-4 max-w-3xl leading-[30px] text-justify`}
             >
               I am a Software Developer currently based in Birmingham. In the
-              frontend I mainly work with JavaScript | TypeScript with their
+              frontend I mainly work with JavaScript and TypeScript with their
               associated libraries: React.js, Vue.js, Next.js, Vite.js,
-              Three.js, Ionic and Capacitor; HTML, and CSS (most of the time using
-              Tailwind). In the backend I am proficient in using JavaScript with
-              Node.js, Express.js and Jest, PostgreSQL as a data management
-              system, and Firebase. To expand my skill set, I am actively
-              learning C#, .NET, Python, and AWS, as I believe in continuously
-              enhancing my abilities and staying up-to-date with industry
-              trends.&nbsp;&#128187;&nbsp;&#128187;
+              Three.js, Ionic and Capacitor; HTML, and CSS (most of the time
+              using TailwindCSS). In the backend I am proficient in using
+              JavaScript with Node.js and Express.js, Jest for unit testing and
+              Supertest for end-to-end testing, PostgreSQL as a data management
+              system, and Firebase for various tasks. To expand my skill set, I
+              am actively learning C#, .NET, Python, and AWS, as I believe in
+              continuously enhancing my abilities and staying up-to-date with
+              industry trends.&nbsp;&#128187;&nbsp;&#128187;
               <br /> <br />
               Challenges lover, I never give up, motivated to learn new things
-              every day, willing to relocate, and keep growing in the tech
+              every day, open and willing to relocate, and keep growing in the tech
               field.
             </motion.p>
             <motion.img
