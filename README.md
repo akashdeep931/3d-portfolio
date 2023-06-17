@@ -14,7 +14,7 @@
 
 <div align="justify">
 
-Welcome to the codebase of my portfolio website :smiley:. This website is fully responsive and built using a powerful tech stack such as: React.js, Three.js, TailwindCSS, TypeScript, and Vite. This combination of cutting-edge technologies ensures a seamless user experience across different devices while leveraging the benefits of component-based development, interactive 3D graphics, and a flexible and scalable styling framework. The use of TypeScript enhances code maintainability and type safety, while Vite optimizes the code bundling and the build process. Overall, this tech stack enables me to deliver a modern, responsive, and visually appealing website.
+Welcome to the codebase of my portfolio website :smiley:. This website is fully responsive and built using a powerful tech stack, including: React.js, Three.js, TailwindCSS, TypeScript, and Vite. This combination of cutting-edge technologies ensures a seamless user experience across different devices while leveraging the benefits of component-based development, interactive 3D graphics, and a flexible and scalable styling framework. The use of TypeScript enhances code maintainability and type safety, while Vite optimizes the code bundling and the build process. Overall, this tech stack enables me to deliver a modern, responsive, and visually appealing website.
 
 </div>
 
