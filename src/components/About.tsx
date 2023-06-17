@@ -65,7 +65,7 @@ const About = () => {
               Three.js, Ionic and Capacitor; HTML, and CSS (most of the time
               using TailwindCSS). In the backend I am proficient in using
               JavaScript with Node.js and Express.js, Jest for unit testing and
-              Supertest for end-to-end testing, PostgreSQL as a data management
+              Supertest for integration testing, PostgreSQL as a data management
               system, and Firebase for various tasks. To expand my skill set, I
               am actively learning C#, .NET, Python, and AWS, as I believe in
               continuously enhancing my abilities and staying up-to-date with
