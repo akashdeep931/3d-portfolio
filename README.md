@@ -35,4 +35,4 @@ Welcome to the codebase of my portfolio website :smiley:. This website is fully 
 
 ## Deployment :rocket:
 
-:point_right: The website has been deployed using [Netlify](https://www.netlify.com/?utm_source=google&utm_medium=paid_search&utm_campaign=12755510784&adgroup=118788138897&utm_term=netlify&utm_content=kwd-309804753741&creative=645259053270&device=c&matchtype=b&location=9045477&gad=1&gclid=CjwKCAjws7WkBhBFEiwAIi1685R9bBeme4enIQVnIPrVqnO_E42_dBWemH6j7kr49PWh9pTxo2qwTBoCDp0QAvD_BwE) 
+:point_right: The website has been deployed using the powerful and user-friendly platform of [Netlify](https://www.netlify.com/?utm_source=google&utm_medium=paid_search&utm_campaign=12755510784&adgroup=118788138897&utm_term=netlify&utm_content=kwd-309804753741&creative=645259053270&device=c&matchtype=b&location=9045477&gad=1&gclid=CjwKCAjws7WkBhBFEiwAIi1685R9bBeme4enIQVnIPrVqnO_E42_dBWemH6j7kr49PWh9pTxo2qwTBoCDp0QAvD_BwE), ensuring seamless accessibility and optimal performance. 
